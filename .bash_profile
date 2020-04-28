@@ -1,0 +1,6 @@
+alias vimbash="vim ~/.bash_profile"
+alias editbash="open ~/.bash_profile"
+alias bashupdate=". ~/.bash_profile"
+alias vivdevmode="open /Applications/Vivaldi.app --args --debug-packed-apps --silent-debugger-extension-api"
+alias vivdevcreatejs="touch /Applications/Vivaldi.app/Contents/Frameworks/Vivaldi\ Framework.framework/Versions/3.0.1874.32/Resources/vivaldi/custom.js"
+alias vivdeveditjs="open /Applications/Vivaldi.app/Contents/Frameworks/Vivaldi\ Framework.framework/Versions/3.0.1874.32/Resources/vivaldi/custom.js"
