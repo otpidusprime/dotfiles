@@ -20,6 +20,8 @@ shopt -s histappend
 alias bashvim="vim ~/.bash_profile"
 alias bashopen="open ~/.bash_profile"
 alias bashdot=". ~/.bash_profile"
+alias cd.="cd .."
+alias cd-="cd -"
 alias gi="git init"
 alias gl="git log"
 alias gs="git status"
