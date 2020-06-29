@@ -34,8 +34,15 @@ alias vivdev="open /Applications/Vivaldi.app --args --debug-packed-apps --silent
 function gc() {
   git commit -m "$*"
 }
+# git tag aliases
+function gt() {
+  git tag -a "$1" -m "$2"
+}
+function gtlw() {
+  git tag "$*"
+}
 # alias to make directory and cd into it
 function mkcd()
 {
-        mkdir $1 && cd $1
+  mkdir "$1" && cd "$1"
 }
