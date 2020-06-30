@@ -42,7 +42,6 @@ function gtlw() {
   git tag "$*"
 }
 # alias to make directory and cd into it
-function mkcd()
-{
+function mkcd() {
   mkdir "$1" && cd "$1"
 }
