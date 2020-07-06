@@ -16,6 +16,8 @@ bind '"\e[B": history-search-forward'
 shopt -s autocd
 shopt -s histappend
 
+export PATH=$PATH:$HOME/bin
+
 # aliases
 alias bashvim="vim ~/.bash_profile"
 alias bashopen="open ~/.bash_profile"
@@ -41,7 +43,20 @@ function gt() {
 function gtlw() {
   git tag "$*"
 }
+# alias to clone git repo
+function gitc() {
+  git clone "$*"
+}
+# alias to clone gists locally and cd into it
+function gisc() {
+  git clone git@gist.github.com:"$*".git && cd "$*"
+}
 # alias to make directory and cd into it
-function mkcd() {
+function mkcd()
+{
   mkdir "$1" && cd "$1"
 }
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
