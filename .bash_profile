@@ -36,6 +36,10 @@ alias vivdev="open /Applications/Vivaldi.app --args --debug-packed-apps --silent
 function gc() {
   git commit -m "$*"
 }
+# alias for git add and commit
+function gac() {
+  git add . && git commit -m "$*"
+}
 # git tag aliases
 function gt() {
   git tag -a "$1" -m "$2"
